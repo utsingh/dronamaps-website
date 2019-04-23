@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!--bootstrap-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <!--font-->
+     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+     <link rel="stylesheet" href="./stylesheet/main_styles.css">
+     <link rel="stylesheet" href="./stylesheet/index_styles.css">
+     <link rel="stylesheet" href="./stylesheet/index_2_style.css">
+     
+    <title>DronaMaps</title>
+    <link rel="icon" type="image/gif/png" href="./source/image/Title_icon.png">
+  </head>
+
+  <body onmousemove="moveMask(event)">
+
+        <!--
+        -->
+       
+      <div class="Intro_cont container-fluid main_nav_container " >
+         <div class="Nav_identifier Nav_container container" id="Nav_identifier" >
+                    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                    <a href="#" class="navbar-brand">
+                      <img class="Logo_navbar" src="./source/image/Company_logo.png" alt="logo"  width="50" height ="50">
+                     </a>
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+            
+                    <!--remove css from img-->
+                    <div class="collapse navbar-collapse" id="navbarMenu">
+                        <ul class="navbar-nav ml-auto" >
+                            <li class="nav-item">
+                                <a href="./index.html" class="nav-link active" >Home</a>
+                             </li>
+                          <li class="nav-item">
+                             <div class="dropdown">
+                                <a href='javascript: void(0);' class="nav-link" >Solution</a>
+                                <div class="dropdown-content">
+                                    <a href="./pipline/settlement_analytics.html">Settlement Analysis</a>
+                                    <a href="./pipline/agriculture_analytics.html">Precision Agriculture Analytics</a>
+                                </div>
+                            </div>
+                          </li>
+                          
+                          <li class="nav-item">
+                              <a href="#" class="nav-link" >Why Drona</a>
+                           </li>
+                           
+                          <li class="nav-item">
+                              <a href="#" class="nav-link" >Blog</a>
+                           </li>
+                           
+                          <li class="nav-item">
+                              <a href="#" class="nav-link" >Contact us</a>
+                           </li>
+                        </ul>
+                      </div>
+                  </nav>
+            </div>
+            <!-- add background image in class INtro_cont-->
+        <div class="row" >
+          <div class="col-md-6 "></div>
+          <div class="col-md-6 mr-auto">    
+            <div class="Intro_desc container padding" onmouseover="moveBoolF()" onmouseout="moveBoolT()">
+             <div class="H_theme_line"></div>
+              <h2 class="padding display-5">Elevate your Drone maps with AI</h2>
+              <p>End-to-end platform to collect process, visualize drone data</p>
+              <p>Deep learning powered insights to make your maps meaningful</p>  
+              <button type="button" class="knowmore">
+                <span class="go" style="position:absolute; display: block"></span>
+                <span style="color: white; position:relative; display: block">Know more</span>
+            </button>
+              </div>        
+            </div>
+          </div>
+        </div>
+        
+        <div id="Mask" class=" container-fluid"></div>
+        <div id="Mask_border"></div>
+
+      <!--
+
+      -->
+      <div class="Comp_cont container padding-top justify-content-center paading "  >
+        <div class="container row">
+            <!--<div class="col-sm-12 col-md-4"></div>-->
+            <div class="col-12  d-flex justify-content-center ">
+                <img src="source/image/Drona_medium_icon.jpeg" alt="Drona_logo">
+            </div>
+            <!--<div class="col-sm-12 col-md-4"></div>-->
+        </div> 
+        <div class="container row">
+          <div class="col-lg-12"><br>
+            <hr class="my-4 padding">
+            <p class="text-center">
+              At Dronamaps, we believe that the maps are just the raw material. we empower
+              decision makers with robust geospatial insights. our team uses a combination
+              of legacy geospatial approaches with AI/ML to streamline the process from data 
+              sorting of images, reconstruction into maps and extracting geospatial analytics.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--
+
+      -->
+      <div class="Product_cont container-fluid padding justify-content-center" >
+           <div class="container " >
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding ">
+                    <h2 class="display-4 text-center"><b>AI Analytics For Drone Maps</b></h2>
+                </div>
+
+                <div class="Product_desc col-xs-12 col-sm-12 col-md-6 col-lg-6 text-justify padding-lg-top">
+                  <div class="H_theme_line"></div>
+                  <p class="padding-top">We are an enterprise platform to help drone users extract analytics from
+                      imagery captured through drones. We provide recommendation engines for planning flights and
+                      applying ground control points after the images are captured, we optimise processing using deep
+                      learning algorithms for data sorting and map creation. In the end, we have automated toolkits
+                      for extraction of map properties for settlements (plot boundaries, roads, land use patterns etc)
+                      and precision agriculture (plant count and health).
+                  </p>
+                </div>
+
+                <div class="Product_video col-xs-12 col-sm-12 col-md-6 col-lg-6 padding-lg-top d-flex justify-content-center ">
+                            <div class="youtube" id="nElEUni7nHM" src="./source/image/video_thumbnail.jpg" style="width:600px; height:300px;">
+                            </div>
+                            <script type="text/javascript" src="https://codegena.com/assets/js/youtube-embed.js"></script>
+                            <!--<img src="./source/image/video_thumbnail.jpg" alt="video_thumbnail" width="400" height="220">
+                                <iframe width="400" height="220" 
+                            src="https://www.youtube.com/embed/nElEUni7nHM">
+                            </iframe>  
+                        use youtube plugin to embed the video-->
+                </div>     
+            </div>
+          </div>
+        </div>
+      <!--
+
+      -->
+
+      <!--
+  
+      -->
+
+      <div class="Pipeline_cont" style="width: 100vw; height: 100vh;">
+        <div id="myCarousel" class="carousel slide" data-ride="false">
+            <ol class="carousel-indicators">
+                <li id="flight" data-target="#myCarousel" data-slide-to="0" class="active">
+                    <div class="thumbnail">
+                        <h6>Preflight</h6>
+                        <div id="selection1" class="H_theme_line_black">
+
+                        </div>
+                    </div>
+                </li>
+                <li id="construction" data-target="#myCarousel" data-slide-to="1">
+                    <div class="thumbnail" style="right:10px;">
+                        <h6>Reconstruction</h6>
+                        <div id="selection2">
+
+                        </div>
+                    </div>
+                </li>
+                <li id="analytic" data-target="#myCarousel" data-slide-to="2">
+                    <div class="thumbnail">
+                        <h6>Analytics</h6>
+                        <div id="selection3">
+
+                        </div>
+                    </div>
+                </li>
+            </ol>
+<hr>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <!--
+                        PREFLIGHT
+                    -->
+                    <!--
+                    <div class="carousel-caption">
+                        <h1>Preflight Recommendation</h1>
+                    </div>
+                -->
+                    <div class="info container-fluid " id="preflight">
+                        <div class="col-lg-2"></div>
+                        <div class="Preflight_icon col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                            <img src="./source/image/preflight_icon.png" alt="Preflight_Icon">
+                        </div>
+                        <div class="desc col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                            <button type="button" class="knowmore">
+                                <span class="go" style="position:absolute; display: block"></span>
+                                <span style="color: white; position:relative; display: block">Know more</span>
+                            </button>
+                            <div class="H_theme_line_2">
+
+                            </div>
+                            <span style="display: inline-block">
+                                <p class="quote">
+                                    Use our recommendation engine to plan your flight and
+                                    ground control points for desired map accuracy and resolution.
+                                </p>
+                            </span>
+                            <!--Floating Button on boundary-->
+
+                        </div>
+                        <div class="col-lg-1"></div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <!--
+                        RECONSTRUCTION
+                    -->
+                <!--
+                        <div class="carousel-caption">
+                        <h1>Reconstruction</h1>
+                        </div>
+                -->
+                    <div class="info container-fluid" id="reconstruction">
+                        <div class="col-lg-2"></div>
+                        <div class="Reconstruction_icon col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                            <img src="./source/image/Reconstruction_icon.png" alt="Reconstruction_Icon">
+                        </div>
+                        <div class="desc col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                            <!--Floating Button on boundary-->
+                            <button type="button" class="knowmore">
+                                <span class="go" style="position:absolute; display: block"></span>
+                                <span style="color: white; position:relative; display: block">Know more</span>
+                            </button>
+                            <div class="H_theme_line_2">
+
+                            </div>
+                            <span style="display: inline-block">
+                                <p class="quote">
+                                    We streamline the process of image reconstruction by applying deep learning
+                                    for sorting of images at the beginning of the funnel. The data is broken and reassembled
+                                    intelligently into manageable chunks.
+                                </p>
+                            </span>
+                        </div>
+                        <div class="col-lg-1"></div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <!--
+                ANALYTICS
+            -->
+                <!--
+                    <div class="carousel-caption">
+                        <h1>Analytics</h1>
+                    </div>
+                -->
+                    <div class="info container-fluid" id="analytics">
+                        <div class="col-lg-2"></div>
+                        <div class="Analytics_icon col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                            <img src="./source/image/Analytics_icon4.png" alt="Analytics_Icon">
+                        </div>
+                        <div class="desc col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                            <!--Floating Button on boundary-->
+                            <button type="button" class="knowmore">
+                                <span class="go" style="position:absolute; display: block"></span>
+                                <span style="color: white; position:relative; display: block">Settlements</span>
+                            </button>
+                            <button type="button" class="knowmore">
+                                <span class="go" style="position:absolute; display: block"></span>
+                                <span style="color: white; position:relative; display: block">Agriculture</span>
+                            </button>
+                            <div class="H_theme_line_2">
+
+                            </div>
+                            <span style="display: inline-block">
+                                <p class="quote">
+                                    We have massive experience in large-scale mapping and we learned that
+                                    the time and cost center was manual extraction of geospatial analytics.
+                                    Therefore, we automated analytics for settlements like plot boundaries, roads,
+                                    trees, land use and agriculture like plant health & plant count.
+                                </p>
+                            </span>
+                        </div>
+                        <div class="col-lg-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Pipeline_info"> <!--style="display:flex"-->
+        </div>
+    </div>
+
+      <br>
+      <br>
+      <!--
+
+      -->
+      <div class="Blog_cont container-fluid justify-content-center" style="width: 100vw; height: 100vh;">
+        <div class="row jumbotron">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <h2 class="display-3 text-center color_azure">INSPIRING DRONE PROJECTS</h2>
+          </div>
+
+            <div class="H_theme_line"></div>
+            
+           
+            <div class="Blog_area container" >
+              <div class="row">
+
+                <div class="Blog col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center padding">
+                    <div class=" card" style="width: 18rem">
+                        <img class="card-img-top" src="./source/image/Medium_ (1).png" alt="medium_Blog_image" height="150px">
+                        <div class="card-body">
+                          <h3 class="card-title">Drones Based maps for Smart Cities:</h3>
+                           <p class="card-text"></p>
+                           <button class="Readmore">ReadMore</button>
+                        </div>
+                     </div>
+                </div>
+                
+                <div class="Blog col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center padding">
+                    <div class=" card" style="width: 18rem">
+                        <img class="card-img-top" src="./source/image/Medium_ (2).png" alt="medium_Blog_image" height="150px">
+                        <div class="card-body">
+                            <h3 class="card-title">Dronafarms: </h3>
+                             <p class="card-text">Wave of Green Revolution powered by grassrots data</p>
+                             <button class="Readmore">ReadMore</button>
+                         </div>
+                     </div>  
+                </div>
+
+                <div class="Blog col-xs-12 col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center padding">
+                    <div class=" card" style="width: 18rem">
+                        <img class="card-img-top"  src="./source/image/Medium_(3).png" alt="medium_Blog_image" height="150px">
+                        <div class="card-body">
+                            <h3 class="card-title">The Future of Urban Planning:</h3>
+                             <p class="card-text">DroneBased 3D maps and piplines in lucknow</p>
+                             <button class="Readmore">ReadMore</button>
+                         </div>
+                     </div>
+                </div>
+     
+              </div>
+              <!-- add blogs-->
+              </div>
+    
+        </div>
+      </div>
+      <!--
+
+      -->
+      <div class="Touch_cont container-fluid">
+        <div class="row jumbotron">
+          <!--dock to left side-->
+          <div class="col-12 mr-auto">
+              <h2 class="display-4" >GET IN TOUCH</h2>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mr-auto">
+              <br>
+              <br>
+              <p>We're happy to hear from you</p>
+              <br>
+              <p>Contact us to learn more about how your business can benefit you!</p>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          
+        <!--Dock to right side-->
+        <div class="Touch_details col-xs-12 col-sm-12 col-md-6 col-lg-6 ml-auto" >
+          <form action="#" method="POST" id="GetInTouch_form">
+            <div class="form-group"></div>
+            <div class="form-row padding-bottom" >
+              <div class="col">
+                  <input type="text"  class="form-control" name="name_touch" placeholder="Name" required>
+              </div>
+              <div class="col">
+                  <input type="email" class="form-control" name="email_touch" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="form-row padding-bottom" >
+              <div class="col">
+                  <input type="text"  class="form-control" name="company_name" placeholder="Company" required>
+              </div>
+              <div class="col">
+                  <input type="text"  class="form-control" name="industry_name" placeholder="Industry" required>
+              </div>
+            </div>
+
+            <div class="form-row padding-bottom">
+              <div class="col">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+              </div>
+            </div>
+            
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Upload</span>
+                </div>
+                
+                  <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile04">
+                  <label class="custom-file-label" for="inputGroupFile04">Choose KML file</label>
+                  </div>
+
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">Submit</button>
+                </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+      </div>
+      <!--
+
+      -->
+      <footer id="footer" >
+          <div class="row container-fluid">   
+           <div class="col-md-2 padding ">
+              <img class="logo" src="./source/image/logo.png" alt="Logo">
+           </div>
+           <div class="col-md-6 padding ">
+              <table>
+                  <tr>
+                      <td> <a href="">PRODUCT</a></td>
+                      <td> <a href="">ABOUT</a></td>
+                  </tr>
+                  <tr>
+                      <td><a href="">SOLUTIONS</a></td>
+                      <td><a href="">NEWS</a></td>
+                  </tr>
+                  <tr>
+                      <td><a href="">BLOG</a></td>
+                  </tr>
+              </table>
+          </div>
+          <div class="col-md-4 padding" >
+              <ul class="copyright">
+  
+                  <li><a href=""><img class ="icons" src="./source/image/Facebook-logo3.png" alt="Facebook"></a>&nbsp; &nbsp;<a href=""><img class ="icons" src="./source/image/Twitter_logo_2.png" alt="Twitter"></a>&nbsp; &nbsp;<a href=""><img class="icons" src="./source/image/8.png" alt="LinkedIn"></a></li>
+                  <li>Join our Community</li>
+                  <li>Subscribe to our newsletter</li><br><br>
+                  <li>Terms and Policy</li>
+                  <li>&copy; 2019 Dronamaps, all right reserved</li>
+              </ul>
+          </div>
+        </div>
+      </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./scripts/scroll.js"></script>
+    <script src="./scripts/selection.js"></script>
+    <script src="./scripts/Moveable_Button.js"></script>
+    <script src="./scripts/Mask1.js"></script>
+  </body>
+</html>

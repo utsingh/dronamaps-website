@@ -1,0 +1,26 @@
+.container{
+    width: 55%;
+}
+
+.Page_title_cont
+{
+    background-image: url("./../source/image/Settelement_A_main.png");
+    height: 25vh;
+}
+
+.Page_title
+{
+    background-color: black;
+
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 10px; 
+     
+    left: 50%;
+    top: 50%;
+}
+
+.padding-top
+{
+    margin-top: 2rem;
+}

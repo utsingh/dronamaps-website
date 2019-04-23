@@ -1,0 +1,208 @@
+
+/*nav bar */
+nav
+{
+  z-index: 5;
+}
+.main_nav_container
+{
+align-content: center;
+}
+
+.Nav_container{
+  padding-top: 1rem; 
+}
+
+.scroll_class 
+{
+position: fixed;
+left: 0;
+width: 100%;
+}
+
+.Nav_identifier
+{
+  z-index: 50;
+}
+
+.Nav_container .navbar{
+  opacity: 0.86;
+}
+
+.navbar-nav li
+{
+  padding-right: 20px;
+  color: white !important;
+}
+
+.navbar-nav li :hover
+{
+  padding-right: 20px;
+  color: white !important;
+}
+
+.nav-link{
+  font-size: 1.1em !important
+}
+
+.Nav_identifier
+{
+  padding-left: 0 !important;
+  padding-right: 0 !important; 
+}
+
+
+/* intrp*/
+.Intro_cont
+{
+  /*
+  background-color: #000b1a;
+  background-image: url("./../source/image/Intro_cont_Colored.png");
+  background-repeat: no-repeat;
+  background-size: 100%; 
+  background-position: 50%;
+  */
+  background-image: url("./../source/image/background/noir.png");
+  background-size: 105%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+
+.Intro_desc
+{
+  position: relative;
+  z-index: 5;
+  margin-top: 15%;
+    float: right;
+    margin-right: 35px;
+  width: 70%;
+  height: 70%;
+  /*background-color: #00232f;*/
+  box-shadow: 0px 3px 5px #327166;
+  /*background-color: #000b1a;*/
+  opacity: 1;
+  padding-right: 10px;
+}
+
+
+
+.Intro_desc button
+{
+  position: relative;
+    top: -15px;
+  float:right;
+}
+
+
+/*Mask*/
+
+#Mask
+{
+    position: absolute;
+    top: 0;
+    width: 100vw ;
+    height: 100vh;
+    background-image: url("./../source/image/background/coloredShadow_m3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 105%;
+    z-index: 2;
+    opacity: 0;
+}
+
+#Mask_border
+{
+    background-color: rgba(171, 167, 167, 0.6);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    opacity: 0;
+}
+
+/*company*/
+.Comp_cont
+{
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+    font-size: 25px;
+}
+
+.Comp_cont img
+{
+width: 200px;
+height: 225px;
+}
+
+.my-4
+{
+  margin: 0!important;
+}
+
+/* product*/
+.Product_cont
+{
+    height: 90vh;
+    padding: 5rem;
+
+ /*background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 100%),url("./../source/image/Map_Trans_m2.png");*/
+    background: linear-gradient(to bottom, rgba(164, 183, 193, 0.5) 0%,rgba(255,255,255,1) 100%), url("./../source/image/Map_Trans_m4.png");
+  background-size: 40%;
+
+  color: rgb(29, 29, 29);
+
+  text-align: center;
+}
+
+.Product_cont .H_theme_line
+{
+  background-color: black;
+}
+.Product_cont p, .Product_cont .H_theme_line{
+  position: relative;
+ /* margin-left: 10vw;*/
+}
+
+.Product_desc
+{
+    padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.59);
+}
+
+.Product_video
+{/*
+  float: right;
+  position: relative;
+  margin-right: 10vw;
+*/
+padding: 3rem;
+}
+
+/*Blog Area*/
+
+.Blog_cont .jumbotron{
+background-image: url("./../source/image/Map_black_bright.png");
+background-size: 50%;
+}
+
+/*
+.Blog_cont button
+{
+  border-radius: 0;
+  border: 0;
+  background-color: black;
+  color: azure;
+}
+*/
+
+@keyframes example {
+  from {width: 50px;}
+  to {width: 100px;}
+}
+
+/* The element to apply the animation to */
