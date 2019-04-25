@@ -2,23 +2,41 @@ jQuery(($)=>{
     let p = $("span.go");
     let oldPos = p.offset();
     const oldMousePos = {x:-1, y: -1};
-    const max_offset = 10;
+    const currentMousePos = { x: -1, y: -1 };
+    const max_offset = 4.5;
     var firsttime = true;
 
-    function myFunction(a, b)
+    function myFunctionY(a, b)
     {
-        if(a-b > 0){
-            if(a-b < max_offset)return a-b;
-            else{ return max_offset;}
+        if(a-b < max_offset && a-b > -max_offset){
+            if(a-b > currentMousePos.y - oldPos.top && a-b < -(currentMousePos.y - oldPos.top))
+            {
+                return a-b;
+            }
+            else
+                return currentMousePos.y - oldPos.top;
         }
-        else if(b-a > 0){ if(b-a <max_offset )return b-a;
-        else{return max_offset;}}
 
-        return 0;
+        else{ return max_offset;}
+    }
+    function myFunctionX(a, b)
+    {
+        if(a-b < max_offset && a-b > -max_offset){
+            if(a-b > currentMousePos.x - oldPos.left && a-b < -(currentMousePos.x - oldPos.left))
+            {
+                return a-b;
+            }
+            else
+                return currentMousePos.x - oldPos.left;
+        }
+
+        else{ return max_offset;}
     }
 
+
     $(document).mousemove((event)=>{
-        const currentMousePos = { x: -1, y: -1 };
+
+        console.log("Script Working");
         currentMousePos.x = event.clientX;
         currentMousePos.y = event.clientY;
         if(firsttime)
@@ -28,17 +46,21 @@ jQuery(($)=>{
             firsttime = false;
         }
         let top , left , moveX, moveY;
+        top = oldPos.top - myFunctionY(currentMousePos.y,oldMousePos.y);
+        left = oldPos.left - myFunctionX(currentMousePos.x,oldMousePos.x);
+        moveX = myFunctionX(oldPos.left,currentMousePos.x);
+        moveY = myFunctionY(oldPos.top,currentMousePos.y);
 
-        if(currentMousePos.x<oldPos.left)
+        if(currentMousePos.x<oldPos.left )
         {
-            if(currentMousePos.y<oldPos.top + 15)
+            if(currentMousePos.y<oldPos.top + 10)
             {
-                moveX = 4 ;//- myFunction(currentMousePos.x,oldMousePos.x);
-                moveY = 4 ;//- myFunction(currentMousePos.y,oldMousePos.y);
-                top = oldPos.top - myFunction(currentMousePos.y,oldMousePos.y);
-                left = oldPos.left - myFunction(currentMousePos.x,oldMousePos.x);
+
+                top = oldPos.top - myFunctionY(currentMousePos.y,oldMousePos.y);
+                left = oldPos.left - myFunctionX(currentMousePos.x,oldMousePos.x);
                 /*p.transition({x: -moveX});
                 p.transition({y: -moveY});*/
+
                 $('span.go').css({
                     "transform": `translate(${-moveX}px,${-moveY}px)`
                 });
@@ -58,10 +80,9 @@ jQuery(($)=>{
             }
             else
             {
-                moveX = 4 ;//- myFunction(currentMousePos.x,oldMousePos.x);
-                moveY = 4 ;//- myFunction(currentMousePos.y,oldMousePos.y);
-                top = oldPos.top + myFunction(currentMousePos.y,oldMousePos.y);
-                left = oldPos.left - myFunction(currentMousePos.x,oldMousePos.x);
+
+                top = oldPos.top + myFunctionY(currentMousePos.y,oldMousePos.y);
+                left = oldPos.left - myFunctionX(currentMousePos.x,oldMousePos.x);
                 /*p.transition({x: -moveX});
                 p.transition({y: moveY});*/
                 $('span.go').css({
@@ -84,18 +105,17 @@ jQuery(($)=>{
                 });*/
             }
         }
-        else if(currentMousePos.x>oldPos.left)
+        else if(currentMousePos.x>oldPos.left )
         {
-            if(currentMousePos.y<oldPos.top + 15)
+            if(currentMousePos.y<oldPos.top)
             {
-                moveX = 4 ;//- myFunction(currentMousePos.x,oldMousePos.x);
-                moveY = 4 ;//- myFunction(currentMousePos.y,oldMousePos.y);
-                top = oldPos.top - myFunction(currentMousePos.y,oldMousePos.y);
-                left = oldPos.left + myFunction(currentMousePos.x,oldMousePos.x);
+
+                top = oldPos.top - myFunctionY(currentMousePos.y,oldMousePos.y);
+                left = oldPos.left + myFunctionX(currentMousePos.x,oldMousePos.x);
                 /*p.transition({x: moveX});
                 p.transition({y: -moveY});*/
                 $('span.go').css({
-                    "transform": `translate(${moveX}px,${-moveY}px)`
+                    "transform": `translate(${moveX*moveX - 13}px,${-moveY}px)`
                 });
                 /*p.animate(1000,{
                     //transform: translate(left+'px',top+'px')
@@ -115,14 +135,13 @@ jQuery(($)=>{
             }
             else
             {
-                moveX = 4 ;//- myFunction(currentMousePos.x,oldMousePos.x);
-                moveY = 4 ;//- myFunction(currentMousePos.y,oldMousePos.y);
-                top = oldPos.top + myFunction(currentMousePos.y,oldMousePos.y);
-                left = oldPos.left + myFunction(currentMousePos.x,oldMousePos.x);
+
+                top = oldPos.top + myFunctionY(currentMousePos.y,oldMousePos.y);
+                left = oldPos.left + myFunctionX(currentMousePos.x,oldMousePos.x);
                 /*p.transition({x: moveX});
                 p.transition({y: moveY});*/
                 $('span.go').css({
-                    "transform": `translate(${moveX}px,${moveY}px)`
+                    "transform": `translate(${moveX*moveX - 13}px,${moveY}px)`
                 });
                 /*p.animate({
                     //transform: translate(left+'px ',top+'px')
@@ -141,9 +160,9 @@ jQuery(($)=>{
                 });*/
             }
         }
-
         oldMousePos.x = currentMousePos.x;
         oldMousePos.y = currentMousePos.y;
+
 
     });
 });
