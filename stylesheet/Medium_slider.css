@@ -1,0 +1,228 @@
+.Blog_section
+{
+    padding: 0;
+    padding-bottom: 2%;
+    background: radial-gradient(circle at 50% 25%, rgba(0,0,0,1) 0%,rgb(44, 44, 44) 100%);
+    color: white;
+}
+
+.Medium_blog
+{
+    /*overflow: initial;*/
+    --width-blog: 22vw;/*33vw*/
+    --height-blog: 100%;
+
+    width: 100%;
+    height: 12vw;/*12vw*/
+    min-height: 80px;
+}
+
+.Medium_blog  .carousel-inner
+{
+overflow: visible;
+width: 100%;
+height: 100%;
+}
+
+
+.Medium_blog  .carousel-inner .carousel-item
+{
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+ 
+}
+
+
+.Medium_blog  .carousel-inner .carousel-item .card-deck
+{
+    overflow: visible;
+    height: 100%;
+    margin-left: 0px!important;
+    flex-direction: row!important;
+}
+
+
+.Medium_blog  .carousel-inner .carousel-item .card-deck .card
+{
+    flex: 1 0 0%;
+    margin: 0!important;
+    width: var(--width-blog);
+    height: var(--height-blog);
+    transition: transform 0.5s;
+    border-radius: 0;
+}
+
+.Medium_blog  .carousel-inner .carousel-item .card-deck .card:hover
+{
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+/*
+.card-deck:hover .card:not(:hover) 
+{
+  transform: scale(0.95);
+ -webkit-filter: blur(1px);
+}
+*/
+
+.Medium_blog  .carousel-inner .carousel-item .card-deck .card  img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.Medium_blog  .carousel-inner .carousel-item .card-deck .card .card-img-overlay
+{
+    background-color: rgba(128, 128, 128, 0.5);
+    width:  100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 14;
+    opacity: 0;
+
+}
+
+.Medium_blog  .carousel-inner .carousel-item .card-deck .card .card-img-overlay:hover
+{
+    opacity: 1;
+}
+
+.Medium_blog  .carousel-inner .carousel-item .card-deck .card .card-img-overlay .card-title
+{
+width: 100%;
+height: 100%;
+text-align: center;
+padding-top: 50%;
+margin: 0px;
+}
+
+.carousel-control-prev , .carousel-control-next
+{
+width: 5vw;
+}
+
+.carousel-control-prev , .carousel-control-next
+{
+    z-index: 3;
+}
+
+.carousel-control-prev:hover , .carousel-control-next:hover
+{
+background-color: rgba(128, 128, 128, 0.658);
+}
+
+
+.media_container
+{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+/*
+.media_container div
+{
+    background-color: white;
+    width: 300px;
+    height: 140px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    align-content: center;
+}*/
+.media_logo{
+    width: 100%;
+    height: 100%;
+}
+
+
+.logo1 {
+    background-image: url("./../source/image/icon/Bw.png");
+    width: 300px;
+    height: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo2 {
+    background-image: url("./../source/image/icon/cnbn.png");
+    width: 300px;
+    height: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo3 {
+    background-image: url("./../source/image/icon/download.png");
+    width: 300px;
+    height: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo4
+{
+    background-image: url("./../source/image/icon/FactorDaily.png");
+    width: 300px;
+    height: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.logo5
+{
+    background-image: url("./../source/image/icon/inc42.png");
+    width: 300px;
+    height: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.logo6
+{
+    background-image: url("./../source/image/icon/YourStory.png");
+    width: 300px;
+    height: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.flex-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.flex-container > div
+{
+    /*  max-width: 150px; */
+
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.flex-container div > a ,.flex-container div a > img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.hindu
+{
+    width: 30%;
+
+}
+
+.cnbc
+{
+    width: 15%;
+}

@@ -65,7 +65,8 @@ width: 100%;
     background: linear-gradient(to left ,rgba(255,255,255,0)65%,rgba(0,0,0,0.5)100%), url("./../source/image/background/noir_V3.png");
     /*background: radial-gradient(circle at left bottom,rgba(0,0,0,0.65)0%,rgba(255,255,255,0)70%), url("./../source/image/background/noir.png");*/
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain , cover;
+    background-position: center;
     height: 100vh;
     color: white;
 }
@@ -108,7 +109,8 @@ width: 100%;
     background-image: url("./../source/image/background/coloredShadow_m5.png");
     background-repeat: no-repeat;
     max-width: 2774px;
-    background-size: cover;
+    background-size:  cover, contain;
+    background-position: center;
     z-index: 2;
     opacity: 0;
 }
@@ -122,13 +124,15 @@ width: 100%;
     height: 100vh;
     z-index: 1;
     opacity: 0;
-    background-size: cover;
+    background-size: contain, cover;
+    background-position: center;
 }
 
 /*company*/
 .Comp_cont
 {
     margin: 0;
+    padding-top: 5%;
     max-width: 100vw;
     width: 120vw;
     height: 100vh;
@@ -141,6 +145,26 @@ width: 100%;
 {
 width: 20%;
 height: 100%;
+}
+.comp_img{
+
+    position: absolute;
+    height: 25vh;
+    width: 25vh;
+    background: url("../source/image/logo_svg.svg") no-repeat;
+    filter: brightness(200%);
+    background-size: contain;
+    z-index: 2;
+}
+.glow{
+    position: relative;
+    left: -0.83vw;
+    top: 50vh;
+    z-index: 1;
+    height: 20.5vh;
+    width: 20vh;
+    background: transparent;
+    box-shadow: 0 -49vh 40px 18px rgba(144, 255, 247, 0.7);
 }
 
 .content{
@@ -202,6 +226,8 @@ height: 100%;
 background-size: 50%;
     z-index: 4;
 }
+
+
 
 /*
 .Blog_cont button

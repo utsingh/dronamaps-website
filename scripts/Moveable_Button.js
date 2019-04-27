@@ -62,7 +62,13 @@ jQuery(($)=>{
                 p.transition({y: -moveY});*/
 
                 $('span.go').css({
-                    "transform": `translate(${-moveX}px,${-moveY}px)`
+                    "transform": `translate(${-moveX}px, ${-moveY}px)`
+                });
+                $('.knowmore_text').css({
+                    'clip-path':`circle(20px at ${-moveX-15}px 54%)`,
+                });
+                $('.knowmore:hover .knowmore_text').css({
+                    'clip-path':`circle(200px at ${-moveX-15}px 54%)`,
                 });
                 /*p.animate({
                     //backgroundPosition: left + 'px ' + top + 'px',
@@ -87,6 +93,12 @@ jQuery(($)=>{
                 p.transition({y: moveY});*/
                 $('span.go').css({
                     "transform": `translate(${-moveX}px,${moveY}px)`
+                });
+                $('.knowmore_text').css({
+                    'clip-path':`circle(20px at ${-moveX-15}px 54%)`,
+                });
+                $('.knowmore:hover .knowmore_text').css({
+                    'clip-path':`circle(200px at ${-moveX-15}px 54%)`,
                 });
                 /*p.animate(1000,{
                     //transform: translate(left+'px',top+'px')
@@ -115,7 +127,13 @@ jQuery(($)=>{
                 /*p.transition({x: moveX});
                 p.transition({y: -moveY});*/
                 $('span.go').css({
-                    "transform": `translate(${moveX*moveX - 13}px,${-moveY}px)`
+                    "transform": `translate(${moveX*moveX - 15}px,${-moveY}px)`
+                });
+                $('.knowmore_text').css({
+                    'clip-path':`circle(20px at ${moveX*moveX - 15 - 15 }px 54%)`,
+                });
+                $('.knowmore:hover .knowmore_text').css({
+                    'clip-path':`circle(200px at ${moveX*moveX - 15 - 15}px 54%)`,
                 });
                 /*p.animate(1000,{
                     //transform: translate(left+'px',top+'px')
@@ -141,7 +159,13 @@ jQuery(($)=>{
                 /*p.transition({x: moveX});
                 p.transition({y: moveY});*/
                 $('span.go').css({
-                    "transform": `translate(${moveX*moveX - 13}px,${moveY}px)`
+                    "transform": `translate(${moveX*moveX - 15}px,${moveY}px)`
+                });
+                $('.knowmore_text').css({
+                    'clip-path':`circle(20px at ${moveX*moveX - 15 - 15}px 54%)`,
+                });
+                $('.knowmore:hover .knowmore_text').css({
+                    'clip-path':`circle(200px at ${moveX*moveX - 15 - 15}px 54%)`,
                 });
                 /*p.animate({
                     //transform: translate(left+'px ',top+'px')

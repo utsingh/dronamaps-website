@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 body{
     font-family: 'Poiret One',monospace;
-    font-size: 1rem;
+    font-size: 100%;
 }
 .headfont{
     font-family: 'Raleway',serif;
