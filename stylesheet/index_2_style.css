@@ -72,14 +72,21 @@
     height: 100%;
     width: 100%;
 }
+.mixdiv{
+    height: 20%;
+    background: red;
+}
 .Pipeline_nav{
     position: sticky!important;
     position: -webkit-sticky;
     top: 8.8vh;
-    z-index: 99;
+    z-index: 10;
     max-height: 100vh;
-    background: radial-gradient(ellipse at left bottom, rgb(44, 44, 44) 0%, rgba(0,0,0,1)100%),radial-gradient(circle at right bottom, rgb(44, 44, 44) 0%, rgba(0,0,0,1)100%);
+    /*background: radial-gradient(circle at center top, rgb(36, 36, 36) 0%,  rgba(0,0,0,1)100%);*/
+   /* background: radial-gradient(circle at center,  rgba(0,0,0,1)0%, rgb(39, 39, 39)25%, rgb(0, 0, 0) 50%, rgb(39, 39, 39) 100%);*/
+    background: black;
     height: 10rem;
+
 }
 .thumbnail h6{
     display: block;
@@ -176,6 +183,7 @@
     margin-top: 10px;
     margin-left: 10px;
     text-align: justify-all;
+    font-size: 75%;
 }
 .H_theme_line_2{
     margin-top: 10px;
@@ -230,6 +238,7 @@
     display: block;
     left: 22%;
     clip-path: circle(20px at 0% 50%);
+    -webkit-clip-path: circle(20px at 0% 50%);
     background: transparent;
     color: blue;
     opacity: 1;
@@ -238,4 +247,5 @@
 }
 .knowmore:hover .knowmore_text{
     clip-path: circle(200px at 0% 0%);
+    -webkit-clip-path: circle(200px at 0% 0%);
 }
