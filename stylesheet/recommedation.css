@@ -1,0 +1,34 @@
+.container{
+    width: 55%;
+}
+
+.padding{
+    padding-bottom: 0;
+}
+.Page_title_cont
+{
+    background: grey;
+    height: 25vh;
+    width: 100vw;
+}
+
+.Page_title
+{
+    background-color: black;
+
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    left: 50%;
+    top: 50%;
+}
+
+.padding-top
+{
+    margin-top: 2rem;
+}
+
+.card-img-top{
+    height: 30vh;
+}

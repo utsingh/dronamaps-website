@@ -37,7 +37,10 @@ body
   padding-top:  1rem;
   padding-bottom: 1rem;
 }
-
+.padding-left-right{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
 .padding-top
 {
   padding-top:  1rem;
@@ -51,6 +54,10 @@ body
   padding-top:  2rem;
 }
 
+.padding-0{
+    padding-left: 0;
+    padding-right: 0;
+}
 .padding-right{
   padding-right: 0;
 }
@@ -60,6 +67,9 @@ body
   padding-top: 0;
 }
 
+.padding-left{
+    padding-left: 6rem;
+}
 
 
 .H_theme_line
@@ -120,6 +130,12 @@ transform: scale(1.1);
 .card-text
 {
   height: 100px;
+}
+
+.content-center{
+    align-content: center;
+    text-align: center;
+    justify-content: center;
 }
 
 /*footer*/
@@ -192,7 +208,7 @@ transition: 0.7s;
 }
 
 .dropdown:hover .dropdown-content{
-  height: 120px;
+  height: auto;
   display: grid;
   text-align: center;
 }

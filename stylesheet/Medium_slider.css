@@ -51,6 +51,8 @@ height: 100%;
     height: var(--height-blog);
     transition: transform 0.5s;
     border-radius: 0;
+    border: none;
+    background: transparent;
 }
 
 .Medium_blog  .carousel-inner .carousel-item .card-deck .card:hover
@@ -75,14 +77,14 @@ height: 100%;
 
 .Medium_blog  .carousel-inner .carousel-item .card-deck .card .card-img-overlay
 {
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     width:  100%;
     height: 100%;
     padding: 0;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    font-size: 14;
+    font-size: 100%;
     opacity: 0;
 
 }
@@ -113,11 +115,11 @@ width: 5vw;
 
 .carousel-control-prev:hover , .carousel-control-next:hover
 {
-background-color: rgba(128, 128, 128, 0.658);
+background-color: rgba(0, 0, 0, 0.658);
 }
 
 
-.media_container
+.Media_mention
 {
     display: flex;
     flex-direction: row;
@@ -208,6 +210,7 @@ background-color: rgba(128, 128, 128, 0.658);
     text-align: center;
     line-height: 75px;
     font-size: 30px;
+
 }
 
 .flex-container div > a ,.flex-container div a > img
@@ -226,3 +229,67 @@ background-color: rgba(128, 128, 128, 0.658);
 {
     width: 15%;
 }
+
+.flex-containerP\&C
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.flex-containerP\&C > div
+{
+    /*  max-width: 150px; */
+
+
+    margin: 30px 20px 20px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+
+
+}
+
+.flex-containerP\&C div > a ,.flex-containerP\&C div a > img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.esri{
+    width: 200%;
+}
+
+.MP{
+    width: 90%;
+}
+
+.UP{
+    width: 85%;
+}
+
+.AP{
+    width: 85%;
+}
+
+ .Sap{
+     width: 100%;
+ }
+
+ .Jio{
+     width: 100%;
+ }
+
+ .Sai{
+     width: 100%;
+ }
+
+ .Jhu{
+     width: 100%;
+ }
+
+ .Kotak{
+     width: 105%;
+ }
