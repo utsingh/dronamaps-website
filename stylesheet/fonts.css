@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 body{
     font-family: 'Poiret One',monospace;
-    font-size: 1rem;
+    font-size: 150%;
 }
 .headfont{
     font-family: 'Raleway',serif;
     font-weight: 200;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 .bold{
     font-weight: bold;
