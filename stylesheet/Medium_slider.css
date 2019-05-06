@@ -13,15 +13,16 @@
     --height-blog: 100%;
 
     width: 100%;
-    height: 12vw;/*12vw*/
+    height: 22vw;/*12vw*/
     min-height: 80px;
 }
 
 .Medium_blog  .carousel-inner
 {
 overflow: visible;
+    top: 10%;
 width: 100%;
-height: 100%;
+height: 63%;
 }
 
 
@@ -38,7 +39,8 @@ height: 100%;
 {
     overflow: visible;
     height: 100%;
-    margin-left: 0px!important;
+    width: 100%;
+    margin-left: 0!important;
     flex-direction: row!important;
 }
 
@@ -51,6 +53,8 @@ height: 100%;
     height: var(--height-blog);
     transition: transform 0.5s;
     border-radius: 0;
+    border: none;
+    background: transparent;
 }
 
 .Medium_blog  .carousel-inner .carousel-item .card-deck .card:hover
@@ -75,14 +79,14 @@ height: 100%;
 
 .Medium_blog  .carousel-inner .carousel-item .card-deck .card .card-img-overlay
 {
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     width:  100%;
     height: 100%;
     padding: 0;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    font-size: 14;
+    font-size: 100%;
     opacity: 0;
 
 }
@@ -103,7 +107,9 @@ margin: 0px;
 
 .carousel-control-prev , .carousel-control-next
 {
+    top: 13%;
 width: 5vw;
+    height: 57%;
 }
 
 .carousel-control-prev , .carousel-control-next
@@ -113,15 +119,17 @@ width: 5vw;
 
 .carousel-control-prev:hover , .carousel-control-next:hover
 {
-background-color: rgba(128, 128, 128, 0.658);
+background-color: rgba(0, 0, 0, 0.658);
 }
 
 
-.media_container
+.Media_mention
 {
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
+    margin-top: 2%;
+    margin-bottom: 3%;
 }
 /*
 .media_container div
@@ -204,10 +212,12 @@ background-color: rgba(128, 128, 128, 0.658);
 {
     /*  max-width: 150px; */
 
-    margin: 10px;
+    margin: 20px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
+    padding: 0.5%;
+
 }
 
 .flex-container div > a ,.flex-container div a > img
@@ -218,11 +228,95 @@ background-color: rgba(128, 128, 128, 0.658);
 
 .hindu
 {
+    width: 40%;
+
+}
+.your_story{
     width: 30%;
+}
+.cnbc
+{
+    width: 25%;
+}
+.inc42{
+    width: 40%;
+}
+.Fd{
+    width: 40%;
+}
+.flex-containerP\&C
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.flex-containerP\&C > div
+{
+    /*  max-width: 150px; */
+
+
+    margin: 0px 20px 20px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    padding: 0 2.5% 2.5%;
+
 
 }
 
-.cnbc
+.flex-containerP\&C div > a ,.flex-containerP\&C div a > img
 {
-    width: 15%;
+    width: 100%;
+    height: 100%;
+}
+
+.esri{
+    width: 160%;
+}
+
+.MP{
+    width: 70%;
+}
+
+.UP{
+    width: 65%;
+}
+
+.AP{
+    width: 65%;
+}
+
+ .Sap{
+     width: 100%;
+ }
+
+ .Jio{
+     width: 100%;
+ }
+
+ .Sai{
+     width: 100%;
+ }
+
+ .Jhu{
+     width: 100%;
+ }
+
+ .Kotak{
+     width: 105%;
+ }
+.Reliance{
+    width: 75%;
+}
+
+.heading{
+   margin-top: 5%;
+    margin-bottom: 0;
+}
+
+.partners\&clients{
+    height: 20%;
 }
