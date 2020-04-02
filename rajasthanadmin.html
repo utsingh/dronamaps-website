@@ -13,6 +13,14 @@
   <title>COVID-19 ADMIN | DronaMaps</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lora|Poppins:600,700'>
+
+<!--navbar imports-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
 <style>
 .iframe-container {
   overflow: hidden;
@@ -49,16 +57,43 @@ h1 {
   font-size: 1.7rem;
 }
 
+nav {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+}
+
 h6 {
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 0.7rem;
+  font-size: 1.0rem;
   color: #fff;
 }
 
+/*
 a {
   color: #fff;
   text-decoration: none;
+}
+*/
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: green;
 }
 
 .wrapper {
@@ -72,22 +107,73 @@ a {
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<h6><a href="rajasthan.html">&larr;  PUBLIC DASHBOARD</a></h6>
-<div class="wrapper">
+
+
+<!--navbar-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">COVID-19 ADMIN | Rajasthan</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Report Mass Gathering</a></li>
+          <li><a href="#">Request Grocery/Essentials</a></li>
+          <li><a href="#">Become a Volunteer</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Information<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Corona Hospitals</a></li>
+          <li><a href="#">Government Orders</a></li>
+          <li><a href="#">Travel Advisory</a></li>
+          <li><a href="#">Helpline</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Reports<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Press Release</a></li>
+          <li><a href="#">Daily Reports</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Curfew Pass</a></li>
+
+      <button class="btn btn-danger navbar-btn">Upload Photo</button>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+      <li><a href="rajasthan.html"><span class="glyphicon glyphicon-log-in"></span> Public Dashboard </a></li>
+    </ul>
+  </div>
+</nav>
   
-  <!--cm sir photo-->
-  <!--<img src="https://i.imgur.com/TbYL8TN.png">-->
+
+<!-- partial:index.partial.html -->
+<!--<h6><a href="rajasthanadmin.html">CUG LOGIN</a></h6>-->
+<div class="wrapper">
   <br>
+  <h6>STATE HELPLINE 0141-2225624</h6>
   <h1>COVID-19 ADMIN Dashboard</h1>
   <img src="https://i.ya-webdesign.com/images/india-transparent-emblem-13.png" style="height:100px; border:none; margin:0; padding:10; overflow:hidden;">
   <p>Government of Rajasthan</p>
   <img src="https://i.imgur.com/n78jTdE.png">
+
+<!--datetime-->
+<h6 id="datetime"></h6>
+
+<script>
+var d = new Date();
+document.getElementById("datetime").innerHTML = d;
+</script>
+
   <div class="iframe-container">
     <iframe src="https://arcportal.rajasthan.gov.in/portal/apps/opsdashboard/index.html#/06628ee37ddf4061a40e8c86659957c5" frameborder="0"></iframe>
   </div><h6>
-  <a href="https://dronamaps.com/">analytics by DronaMaps.</a> Made for DoIT, Government of Rajasthan.
+  <a href="https://dronamaps.com/">&copy; 2020, analytics by DronaMaps.</a> Made for DoIT, Government of Rajasthan.
   </h6>
+  <h6><a href="">FEEDBACK</a></h6>
 </div>
 <!-- partial -->
   
