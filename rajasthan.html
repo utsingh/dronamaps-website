@@ -42,7 +42,7 @@ body {
   font-family: 'Lora', serif;
   font-size: 16px;
   line-height: 1.3;
-  margin: 1rem 0;
+  margin: 0.2rem 0;
   text-align: center;
 }
 
@@ -101,6 +101,15 @@ a:active {
   padding: 0rem;
   width: 100%;
 }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
   </style>
 
 </head>
@@ -116,7 +125,7 @@ a:active {
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+      <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="#">Report Mass Gathering</a></li>
           <li><a href="#">Request Grocery/Essentials</a></li>
@@ -141,10 +150,14 @@ a:active {
       <li><a href="#">Curfew Pass</a></li>
 
       <button class="btn btn-danger navbar-btn">Upload Photo</button>
+    -->
     </ul>
     <ul class="nav navbar-nav navbar-right">
+    -->
+
+
       <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
-      <li><a href="rajasthanadmin.html"><span class="glyphicon glyphicon-log-in"></span> CUG Login</a></li>
+      <li><a href="rajasthanadmin.html"><span class="glyphicon glyphicon-log-in"></span> CUG Login </a></li>
     </ul>
   </div>
 </nav>
@@ -153,14 +166,29 @@ a:active {
 <!-- partial:index.partial.html -->
 <!--<h6><a href="rajasthanadmin.html">CUG LOGIN</a></h6>-->
 <div class="wrapper">
-  <br>
-  
-  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Emblem_Rajasthan.png" style="height:100px; border:none; margin:0; padding:10; overflow:hidden;">
-  <p>Government of Rajasthan</p>
+  <!--logo-->
+  <!--<table>
+  <tr>
+    <th rowspan="3">--><br><p>
+    
+    <img src="https://i.imgur.com/SfZvBTj.png" style="height:50px; border:none; margin:0; padding:10; overflow:hidden;"><b>Government of Rajasthan | 
+    COVID-19 DASHBOARD</b></p>
+
+
+
+
+    <!--STATE HELPLINE 0141-2225624</p>-->
+  <!--<p>Government of Rajasthan</p>
   <img src="https://i.imgur.com/GIqTS7O.png">
   <h1>COVID-19 DASHBOARD</h1>
-  <h6>STATE HELPLINE 0141-2225624</h6>
+  <h6>STATE HELPLINE 0141-2225624</h6>-->
+
+  <div class="iframe-container">
+    <iframe src="https://doit.maps.arcgis.com/apps/opsdashboard/index.html#/d3e48fe3fab54214b76a1b8dae0720f1" frameborder="0"></iframe>
+  </div>
+
 <!--datetime-->
+
 <h6 id="datetime"></h6>
 
 <script>
@@ -168,9 +196,8 @@ var d = new Date();
 document.getElementById("datetime").innerHTML = d;
 </script>
 
-  <div class="iframe-container">
-    <iframe src="https://doit.maps.arcgis.com/apps/opsdashboard/index.html#/d3e48fe3fab54214b76a1b8dae0720f1" frameborder="0"></iframe>
-  </div><h6>
+
+  <h6>
   <a href="https://dronamaps.com/">&copy; 2020, analytics by DronaMaps.</a> Made for DoIT, Government of Rajasthan.
   </h6>
   <h6><a href="">FEEDBACK</a></h6>
