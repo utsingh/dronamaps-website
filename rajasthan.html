@@ -13,6 +13,14 @@
   <title>COVID-19 Rajasthan | DronaMaps</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lora|Poppins:600,700'>
+
+<!--navbar imports-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
 <style>
 .iframe-container {
   overflow: hidden;
@@ -48,10 +56,15 @@ h1 {
   font-size: 1.7rem;
 }
 
+nav {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+}
+
 h6 {
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 0.7rem;
+  font-size: 1.0rem;
 }
 
 a {
@@ -70,19 +83,74 @@ a {
 
 </head>
 <body>
+
+
+<!--navbar-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">COVID-19 Dashboard | Rajasthan</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Report Mass Gathering</a></li>
+          <li><a href="#">Request Grocery/Essentials</a></li>
+          <li><a href="#">Become a Volunteer</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Information<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Corona Hospitals</a></li>
+          <li><a href="#">Government Orders</a></li>
+          <li><a href="#">Travel Advisory</a></li>
+          <li><a href="#">Helpline</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Reports<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Press Release</a></li>
+          <li><a href="#">Daily Reports</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Curfew Pass</a></li>
+
+      <button class="btn btn-danger navbar-btn">Upload Photo</button>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+      <li><a href="rajasthanadmin.html"><span class="glyphicon glyphicon-log-in"></span> CUG Login</a></li>
+    </ul>
+  </div>
+</nav>
+  
+
 <!-- partial:index.partial.html -->
-<h6><a href="rajasthanadmin.html">CUG LOGIN</a></h6>
+<!--<h6><a href="rajasthanadmin.html">CUG LOGIN</a></h6>-->
 <div class="wrapper">
   <br>
+  <h6>STATE HELPLINE 0141-2225624</h6>
   <h1>COVID-19 Dashboard</h1>
   <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Emblem_Rajasthan.png" style="height:100px; border:none; margin:0; padding:10; overflow:hidden;">
   <p>Government of Rajasthan</p>
   <img src="https://i.imgur.com/GIqTS7O.png">
+
+<!--datetime-->
+<h6 id="datetime"></h6>
+
+<script>
+var d = new Date();
+document.getElementById("datetime").innerHTML = d;
+</script>
+
   <div class="iframe-container">
     <iframe src="https://doit.maps.arcgis.com/apps/opsdashboard/index.html#/d3e48fe3fab54214b76a1b8dae0720f1" frameborder="0"></iframe>
   </div><h6>
-  <a href="https://dronamaps.com/">analytics by DronaMaps.</a> Made for DoIT, Government of Rajasthan.
+  <a href="https://dronamaps.com/">&copy; 2020, analytics by DronaMaps.</a> Made for DoIT, Government of Rajasthan.
   </h6>
+  <h6><a href="">FEEDBACK</a></h6>
 </div>
 <!-- partial -->
   
